@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 // Query tanan keylogs
-$sql = "SELECT * FROM keylogs ORDER BY id DESC";
+$sql = "SELECT * FROM keylogs ORDER BY id ASC";
 $result = $conn->query($sql);
 ?>
 
